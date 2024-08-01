@@ -2,5 +2,4 @@
   gather_facts: false
   tasks:
     - name: Running Arbitrary Command 1
-      ansible.builtin.shell: |
-        lsmod
+      ansible.builtin.shell: cat /etc/redhat-release
