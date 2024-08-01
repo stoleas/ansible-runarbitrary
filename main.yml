@@ -1,0 +1,6 @@
+- hosts: all
+  gather_facts: false
+  tasks:
+    - name: Running Arbitrary Command 1
+      shell: |
+        lsmod
