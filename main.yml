@@ -3,3 +3,8 @@
   tasks:
     - name: Running Arbitrary Command 1
       ansible.builtin.shell: cat /etc/redhat-release
+      register: output
+
+    - name: Debugging output
+      debug:
+        var: output.stdout
