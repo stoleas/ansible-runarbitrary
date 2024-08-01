@@ -8,3 +8,6 @@
     - name: Debugging output
       debug:
         var: output.stdout
+
+
+
